@@ -10,6 +10,11 @@
       "StackName": "amplify-cs320-dev-3821a",
       "StackId": "arn:aws:cloudformation:us-west-1:730335528058:stack/amplify-cs320-dev-3821a/3b028460-d616-11ef-999d-02012ef5ae77",
       "AmplifyAppId": "d28fexljxtdg66"
+    },
+    "categories": {
+      "auth": {
+        "cs320d84f02d3": {}
+      }
     }
   }
 }
