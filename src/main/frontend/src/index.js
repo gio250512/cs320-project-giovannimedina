@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './Components/Pages/Home';
-import SignInPage from './Components/Pages/SignInPage'
+import App from './Components/App';
+import Page2 from './Components/Page2'
 import Navbar from './Components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Amplify } from 'aws-amplify';
@@ -17,8 +17,8 @@ root.render(
         <BrowserRouter>
             <Navbar/>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/SignInPage" element={<SignInPage />} />
+                <Route path="/" element={<App />} />
+                <Route path="/page2" element={<Page2 />} />
                 {/* You can add more pages by adding more Route elements here */}
             </Routes>
         </BrowserRouter>
