@@ -1,7 +1,7 @@
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
-function Page2({ signOut, user }) {
+function SignInPage({ signOut, user }) {
     return (
         <>
             <h1>Hello {user.username}</h1>
@@ -10,4 +10,4 @@ function Page2({ signOut, user }) {
     );
 }
 
-export default withAuthenticator(Page2);
+export default withAuthenticator(SignInPage);

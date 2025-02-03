@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import { API_URL } from "../config"; // gets the API_URL from the config.js file
+import FamousWhispersPage from "./FamousWhispersPage";
+
+
 
 function App() {
   const [message, setMessage] = useState(''); // will hold the message from the backend
@@ -23,8 +26,12 @@ function App() {
 
   return (
       <div>
+        <FamousWhispersPage/>
+        
         <h1>Message from the backend:</h1>
         <p>{message}</p>
+
+
       </div>
   );
 }
