@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Amplify } from 'aws-amplify';
 import config from './amplifyconfiguration.json';
 import SignInPage from "./Components/SignInPage";
+import FamousWhispersPage from "./Components/FamousWhispers";
 
 Amplify.configure(config);
 
@@ -20,6 +21,7 @@ root.render(
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/SignInPage" element={<SignInPage />} />
+                <Route path="/FamousWhispersPage" element={<FamousWhispersPage />} />
                 {/* You can add more pages by adding more Route elements here */}
             </Routes>
         </BrowserRouter>

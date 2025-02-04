@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { API_URL } from "../config"; // gets the API_URL from the config.js file
-import FamousWhispersPage from "./FamousWhispersPage";
-
+import FamousWhispersPage from "./FamousWhispers";
+import FullSizeSlideshow from "./FullSizeSlideshow";
+import golden from '../Sources/GoldenGate1.jpg';
+import Mountains1 from '../Sources/Mountains.MOV';
 
 
 function App() {
@@ -24,10 +26,28 @@ function App() {
     fetchMessage();
   }, []);
 
+    const mediaItems = [
+        {
+            type: 'image',
+            url: golden,
+            title: 'Golden Gate Bridge',
+            description: 'The iconic Golden Gate Bridge in San Francisco, California.',
+        },
+        {
+            type: 'video',
+            url: Mountains1,
+            title: 'Mountain Scenery',
+            description: 'A breathtaking view of mountains and nature.',
+        },
+
+    ];
+
   return (
       <div>
-        <FamousWhispersPage/>
-        
+
+          <FullSizeSlideshow mediaItems={ mediaItems } />
+          <FamousWhispersPage/>
+
         <h1>Message from the backend:</h1>
         <p>{message}</p>
 
