@@ -1,0 +1,43 @@
+.appslide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    background-color: #E6FFFA;
+    font-family: "Times New Roman", sans-serif;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #1b3146;
+}
+
+.header h2 {
+    font-size: 2rem;
+    margin: 10px 0 20px;
+    color: #1b3146;
+}
+
+.image {
+    position: relative;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #1b3146;
+    line-height: 1.6;
+}
+

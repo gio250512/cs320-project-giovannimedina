@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Amplify } from 'aws-amplify';
 import config from './amplifyconfiguration.json';
 import SignInPage from "./Components/SignInPage";
-import FamousWhispersPage from "./Components/FamousWhispers";
+import FamousWhispersPage from "./Components/FamouseWhispersPage";
 
 Amplify.configure(config);
 

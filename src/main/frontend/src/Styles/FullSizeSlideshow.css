@@ -1,12 +1,12 @@
 .slideshow-container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100vw; /* 100% viewport width */
+    height: 100vh; /* 100% viewport height */
     overflow: hidden;
 }
 
 .slide {
-    position: absolute;
+    position: absolute; /* Fix position value */
     top: 0;
     left: 0;
     width: 100%;
