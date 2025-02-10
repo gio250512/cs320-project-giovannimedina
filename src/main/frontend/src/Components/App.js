@@ -5,7 +5,7 @@ import FullSizeSlideshow from "./FullSizeSlideshow";
 import golden from '../Sources/GoldenGate1.jpg';
 import Mountains1 from '../Sources/Mountains.MOV';
 import Appslide from '../Components/Appslide.js';
-import Presentation from '../Components/Presentation';
+import Card from './Card';
 
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
 
   return (
       <div>
-          <Presentation/>
+          <Card/>
           <FullSizeSlideshow mediaItems={ mediaItems } />
           <FamousWhispersPage/>
           <Appslide/>

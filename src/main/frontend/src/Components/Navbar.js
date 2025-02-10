@@ -28,7 +28,7 @@ const Navbar = () => {
                             <NavLink to="/FamousWhispersPage" onClick={handleShowNavbar}>Famous Whispers</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/pages/whispered-cities" onClick={handleShowNavbar}>Whispered Cities</NavLink>
+                            <NavLink to="/WhisperedCitiesPage" onClick={handleShowNavbar}>Whispered Cities</NavLink>
                         </li>
                         <li>
                             <NavLink to="/SignInPage" onClick={handleShowNavbar}>Sign In / Log In</NavLink>

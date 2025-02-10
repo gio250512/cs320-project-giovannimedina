@@ -7,7 +7,7 @@ const Card = () => {
         <div className="card">
             <div className="card-content">
                 <div className="card-text">
-                    <h1 className="card-title">We are GAMT WHISPERS</h1>
+                    <h1 className="card-title">GAMT WHISPERS</h1>
                     <h2 className="card-description">
                         You discovered, you whisper
                     </h2>
