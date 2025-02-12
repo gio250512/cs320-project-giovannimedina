@@ -4,8 +4,9 @@ import FamousWhispersPage from "./FamousWhispers";
 import FullSizeSlideshow from "./FullSizeSlideshow";
 import golden from '../Sources/GoldenGate1.jpg';
 import Mountains1 from '../Sources/Mountains.MOV';
-import Appslide from '../Components/Appslide.js';
+import Appslide from './Appslide';
 import Card from './Card';
+import { UserRegistrationForm } from './UserRegistrationForm';
 
 
 function App() {
@@ -50,6 +51,8 @@ function App() {
           <FullSizeSlideshow mediaItems={ mediaItems } />
           <FamousWhispersPage/>
           <Appslide/>
+          <UserRegistrationForm/>
+
 
         <h1>Message from the backend:</h1>
         <p>{message}</p>

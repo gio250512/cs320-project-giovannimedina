@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Components/App';
-import Page2 from './Components/SignInPage'
 import Navbar from './Components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Amplify } from 'aws-amplify';
