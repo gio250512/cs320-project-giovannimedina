@@ -1,29 +1,33 @@
 import React from 'react';
 import logo from './GAMTlogo.png';
+import BBQ from '../Sources/BBQ.JPEG';
+import arempas from '../Sources/arempas.JPEG';
+import chalo from '../Sources/chalo.jpg';
 import '../Styles/App.css';
 
 const FamousWhispers = () => {
     const cards = [
         {
-            title: "Eggs in the city",
+            title: "Arempas",
             City: "Salt Lake City, Utah",
             description:
-                "Voyage Distinction curates bespoke travel experiences, offering discerning travelers access to the world's most captivating destinations and hidden gems. Embark on a journey defined by elegance, luxury, and unparalleled service.",
-            image: logo
+                "Experience authentic Venezuelan cuisine at Arempas in Salt Lake City. Known for its delicious arepas, cachapas, and patacones, this restaurant offers a cozy atmosphere and a variety of gluten-free and vegan options. Perfect for a late-night bite or a flavorful meal any time of day.",
+            image: arempas
         },
         {
-            title: "Valley of the Gods",
-            City: "Salt Lake City, Utah",
+            title: "Willamette Valley Smokehouse",
+            City: "Salem, Oregon",
             description:
-                "Unleash the potential of every destination with our bespoke travel planning. Elevate your experiences through expert insights and meticulously crafted itineraries tailored to your finest tastes.",
-            image: logo
+                "Indulge in mouthwatering BBQ at Willamette Valley Smokehouse! Relish delicious meals crafted by an expert pit master team & dedicated staff. Unwind by the campfire with a glass of locally sourced beer or wine, enjoy live music, and soak in the friendly atmosphere.",
+            image: BBQ
         },
         {
-            title: "Pelican Brewing",
-            City: "Canon Beach, Oregon",
+            title: "El rico Sanguchon de Chalo",
+            City: "West Valley City, Utah",
             description:
-                "Embark on an unparalleled journey through nature's wonders, where every adventure is meticulously curated to offer an exquisite blend of thrill and serenity. Our bespoke outdoor excursions promise memories woven with the fabric of luxury and discovery.",
-            image: logo        }
+                "A popular sandwich shop, known for its mouthwatering Peruvian sandwiches. From the Churrasco sandwich to the Lomo Saltado, there's something for everyone to enjoy. The cozy atmosphere and friendly staff make it the perfect spot for a quick bite or a meal with friends and family.",
+            image: chalo
+        }
     ];
 
     return (
@@ -37,7 +41,7 @@ const FamousWhispers = () => {
                         <img
                             src={card.image}
                             alt={card.title}
-                            className="w-full h-48 object-cover"
+                            className="w-full h-full object-cover"
                         />
                         <div className="p-6">
                             <h2 className="text-xl font-bold mb-2 text-teal-900">{card.title}</h2>

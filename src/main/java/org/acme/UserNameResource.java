@@ -6,21 +6,29 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import java.util.List;
 
+/**
+ * RESTful resource class to handle CRUD operations for UserName entities.
+ * Provides endpoints for creating, reading, updating, and deleting user names.
+ */
 @Path("/user")
 public class UserNameResource {
 
-    // Create
+    /**
+     * Create a new UserName entity from the provided query parameter and persist it to the database.
+     * @param name the name to be stored.
+     * @return a response indicating success or failure.
+     */
     @POST
-    @Path("/{name}")
+    @Path("/registration")
     @Produces(MediaType.TEXT_PLAIN)
     @Transactional
-    public Response createUser(@PathParam("name") String name) {
+    public Response createUser(@QueryParam("name") String name) {
         try {
             if (name == null || name.isEmpty()) {
                 return Response.status(Response.Status.BAD_REQUEST)
                         .entity("Invalid input: Name cannot be null or empty").build();
             }
-            UserName userName = new UserName(name); // Create a new UserName entity from the path parameter
+            UserName userName = new UserName(name); // Create a new UserName entity from the query parameter
             userName.persist(); // Add the UserName entity to the database
             return Response.ok("Hello " + name + "! Your name has been stored in the database.").build();
         } catch (Exception e) {
@@ -29,7 +37,10 @@ public class UserNameResource {
         }
     }
 
-    // Read (version 1) - only returns a list of names
+    /**
+     * Retrieve and list all names from the database.
+     * @return a response with the list of names or an error message.
+     */
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public Response getNames() {
@@ -46,12 +57,17 @@ public class UserNameResource {
         }
     }
 
-    // Update
+    /**
+     * Update the name of an existing UserName entity based on the provided ID and new name.
+     * @param id the ID of the user to be updated.
+     * @param newName the new name to be assigned.
+     * @return a response indicating success or failure.
+     */
     @PATCH
     @Path("/{id}")
     @Produces(MediaType.TEXT_PLAIN)
     @Transactional
-    public Response updateName(@PathParam("id") Long id, String newName) {
+    public Response updateName(@PathParam("id") Long id, @QueryParam("name") String newName) {
         try {
             if (newName == null || newName.isEmpty()) {
                 return Response.status(Response.Status.BAD_REQUEST)
@@ -71,7 +87,11 @@ public class UserNameResource {
         }
     }
 
-    // Delete
+    /**
+     * Delete an existing UserName entity based on the provided ID.
+     * @param id the ID of the user to be deleted.
+     * @return a response indicating success or failure.
+     */
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.TEXT_PLAIN)

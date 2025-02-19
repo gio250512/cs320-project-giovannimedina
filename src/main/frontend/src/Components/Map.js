@@ -7,7 +7,7 @@ const mapStyles = {
 };
 
 const defaultCenter = {
-    lat: 36.1699, lng: -115.1398 // Centered on Las Vegas for initial view
+    lat: 39.9720, lng: -117.7357 // Centered on Around Winnemucca, Nevada for initial view
 };
 
 const locations = [
@@ -15,6 +15,7 @@ const locations = [
     { name: "Los Angeles", location: { lat: 34.0522, lng: -118.2437 } },
     { name: "Las Vegas", location: { lat: 36.1699, lng: -115.1398 } },
     { name: "Portland", location: { lat: 45.5152, lng: -122.6784 } },
+    { name: "San Francisco", location: { lat: 37.7749, lng: -122.4194 } },
 ];
 
 const Map = () => {
