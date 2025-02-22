@@ -16,7 +16,6 @@ import Portland3 from '../Sources/Portland3.JPEG';
 import Riverside from '../Sources/Riverside.jpg';
 import WoFLA from '../Sources/WoFLA.jpg';
 import CanonBeach from '../Sources/CanonBeach1.JPEG';
-import CanonBeach1 from '../Sources/CanonBeach1.MP4';
 
 
 
@@ -95,13 +94,6 @@ function App() {
             title: 'Canon Beach, Oregon',
             description: 'A charming coastal city known for its beautiful sandy shores.',
         },
-        {
-            type: 'video',
-            url: CanonBeach1,
-            title: 'Haystack Rock, Canon Beach',
-            description: 'A monumental rock formation and iconic landmark on Cannon Beach.',
-        },
-
         {
             type: 'image',
             url: Riverside,
