@@ -21,6 +21,7 @@ import CanonBeach1 from '../Sources/CanonBeach1.MP4';
 
 
 
+
 function App() {
   const [message, setMessage] = useState(''); // will hold the message from the backend
 
@@ -123,8 +124,6 @@ function App() {
           <FullSizeSlideshow mediaItems={ mediaItems } />
           <FamousWhispersPage/>
           <Appslide/>
-          <UserRegistrationForm/>
-
 
         <h1>Message from the backend:</h1>
         <p>{message}</p>

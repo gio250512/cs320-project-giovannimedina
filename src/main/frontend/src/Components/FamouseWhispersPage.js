@@ -2,7 +2,6 @@ import React from 'react';
 import FamousWhispers from "./FamousWhispers";
 import Appslide from "./Appslide";
 
-
 const FamousWhispersPage = () => {
     return (
 

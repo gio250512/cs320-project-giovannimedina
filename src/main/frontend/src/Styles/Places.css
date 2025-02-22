@@ -1,0 +1,140 @@
+/* In Places.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    transition: border-color 0.3s;
+}
+
+form button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input[type="text"]:focus,
+form textarea:focus,
+form input[type="file"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2563eb;
+}
+
+.preview-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.places-list {
+    margin-top: 2rem;
+}
+
+.place-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.place-item .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.place-item p {
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.place-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+    object-fit: cover;
+}
+
+.place-item .actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.place-item .actions button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #3b82f6;
+    cursor: pointer;
+    padding: 0;
+}
+
+.place-item .actions button.delete {
+    color: #ef4444;
+}
+
+.place-item .actions button:hover {
+    text-decoration: underline;
+}
